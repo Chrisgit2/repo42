@@ -1,1 +1,3 @@
 https://blog.sstorie.com/self-hosting-an-angular-2-website-in-a-windows-service/
+https://angular.io/guide/visual-studio-2015
+http://www.scottturman.com/asp-net-core-web-api-and-angular-cli/

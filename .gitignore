@@ -1,0 +1,49 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/VS_AngularCLI/testproj/dist
+/VS_AngularCLI/testproj/tmp
+/VS_AngularCLI/testproj/out-tsc
+/VS_AngularCLI/testproj/wwwroot
+/VS_AngularCLI/testproj/bin
+/VS_AngularCLI/testproj/obj
+/VS_AngularCLI/testproj/.vs
+
+# dependencies
+/VS_AngularCLI/testproj/node_modules
+
+
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+yarn-error.log
+
+# e2e
+/VS_AngularCLI/testproj/e2e/*.js
+/VS_AngularCLI/testproj/e2e/*.map
+
+# System Files
+.DS_Store
+Thumbs.db

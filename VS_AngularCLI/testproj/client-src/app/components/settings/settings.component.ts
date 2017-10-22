@@ -3,11 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import { SideNavProviderService } from './../../services/side-nav-provider.service';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  selector: 'app-settings',
+  templateUrl: './settings.component.html',
+  styleUrls: ['./settings.component.css']
 })
-export class DashboardComponent implements OnInit {
+export class SettingsComponent implements OnInit {
 
   constructor(public sideNavProvider: SideNavProviderService) { 
   }

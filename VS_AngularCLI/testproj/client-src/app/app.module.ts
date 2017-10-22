@@ -6,18 +6,21 @@ import {AppRoutingModule} from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { SettingsComponent } from './components/settings/settings.component';
+import { SideNavProviderService } from './services/side-nav-provider.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    SettingsComponent
   ],
   imports: [
     AppMaterialModule,
     BrowserModule,
     AppRoutingModule    
   ],
-  providers: [],
+  providers: [SideNavProviderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

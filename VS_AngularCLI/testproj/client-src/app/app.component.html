@@ -1,16 +1,16 @@
 <div style="height: 100%">
-  <mat-sidenav-container style="height: 100%">
+  <mat-sidenav-container style="height: 1000">
       <!--<mat-sidenav #sidenav [mode]="sideNavMode" [opened]="sideNavProvider.sideNavOpen | async">-->
-      <mat-sidenav #sidenav>
+      <mat-sidenav #sidenav [mode]="sideNavMode" [opened]="sideNavProvider.sideNavOpen | async">
           <mat-toolbar color="primary">
               <button mat-icon-button><mat-icon>home</mat-icon></button>
               <span>Lizenzverwaltung</span>
           </mat-toolbar>
           <ul>
-            <!-- <li><a md-button (click)="doNavigate()" routerLink={{dashboardPath}}><md-icon>dashboard</md-icon>Dashboard</a></li>-->
-             <li><a mat-button><mat-icon>dashboard</mat-icon>dashboard</a></li>
-             <li><a mat-button><mat-icon>face</mat-icon>Kunden</a></li>
-             <li><a mat-button><mat-icon>copyright</mat-icon>Lizenzen</a></li>
+            <!-- <li><a md-button (click)="doNavigate()" routerLink={{dashboardPath}}><md-icon>dashboard</md-icon>Dashboard</a></li>-->            
+             <li><a mat-button routerLink={{dashboardPath}}><mat-icon>dashboard</mat-icon>Dashboard2</a></li>
+             <li><a mat-button routerLink={{settingsPath}}><mat-icon>settings</mat-icon>Settings2</a></li>
+             <li><a mat-button><mat-icon>copyright</mat-icon></a></li>
              <li><hr /></li>
              <li><a mat-button ><mat-icon>info_outline</mat-icon>{{version}}</a></li>
          </ul>

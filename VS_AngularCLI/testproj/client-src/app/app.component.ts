@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {TestService} from './services/testservice/test.service'
+import {MatSidenav} from '@angular/material';
 
 @Component({
   selector: 'app-root',

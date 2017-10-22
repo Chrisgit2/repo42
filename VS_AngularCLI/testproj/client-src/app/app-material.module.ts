@@ -1,6 +1,7 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {MatToolbarModule} from '@angular/material';
+import {MatSidenavModule} from '@angular/material';
 //import {MatButtonModule} from '@angular/material';
 //import {MatSidenavModule, MdChipsModule, MdInputModule, MdSelectModule,  MdToolbarModule, MdIconModule, MdTooltipModule} from '@angular/material';
 //import {MdListModule, MdProgressBarModule, MdDialogModule, MdCheckboxModule, MdTableModule, MdDatepickerModule, MdNativeDateModule} from '@angular2-material';
@@ -15,7 +16,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
   ],
   exports: [
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,MatSidenavModule
  //   MdSidenavModule, MdChipsModule, MdInputModule, MdSelectModule, MdButtonModule, MdToolbarModule, MdIconModule, MdTooltipModule,
  //   MdCardModule, MdListModule, MdProgressBarModule, MdDialogModule, MdCheckboxModule, MdTableModule,MdDatepickerModule,MdNativeDateModule,MdSnackBarModule,
  //   MdNativeDateModule,CdkTableModule

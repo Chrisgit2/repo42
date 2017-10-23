@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { SideNavProviderService } from './services/side-nav-provider.service';
+import { SizeProviderService } from './services/size-provider.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { SideNavProviderService } from './services/side-nav-provider.service';
     BrowserModule,
     AppRoutingModule    
   ],
-  providers: [SideNavProviderService],
+  providers: [SideNavProviderService, SizeProviderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

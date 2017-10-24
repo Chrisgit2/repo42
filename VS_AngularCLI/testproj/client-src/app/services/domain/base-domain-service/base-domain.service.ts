@@ -103,5 +103,6 @@ export class BaseDomainService<T1> {
   protected handleError(error: any) {
     console.error('An error occured', error);
     //return Promise.reject(error);
+    return undefined;
   }
 }

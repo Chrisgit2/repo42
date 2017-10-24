@@ -15,6 +15,7 @@ export class AppComponent {
   private title = 'app';
   public settingsPath = '/' + ROUTES.SETTINGS;
   public dashboardPath = '/' + ROUTES.DASHBOARD;
+  public testDataPath = '/' + ROUTES.TESTDATA;
   public sideNavMode: string;
 
   public constructor(public sideNavProvider: SideNavProviderService, private sizeProvider: SizeProviderService) {

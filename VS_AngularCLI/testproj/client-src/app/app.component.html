@@ -1,14 +1,13 @@
 <div style="height: 100%">
   <mat-sidenav-container >
-      <!--<mat-sidenav #sidenav [mode]="sideNavMode" [opened]="sideNavProvider.sideNavOpen | async">-->
       <mat-sidenav #sidenav [mode]="sideNavMode"  [opened]="sideNavProvider.sideNavOpen | async">
           <mat-toolbar color="primary">
               <button mat-icon-button><mat-icon>home</mat-icon></button>
               <span>Lizenzverwaltung</span>
           </mat-toolbar>
           <ul>
-            <!-- <li><a md-button (click)="doNavigate()" routerLink={{dashboardPath}}><md-icon>dashboard</md-icon>Dashboard</a></li>-->            
              <li><a mat-button (click)="doNavigate()" routerLink={{dashboardPath}}><mat-icon>dashboard</mat-icon>Dashboard2</a></li>
+             <li><a mat-button (click)="doNavigate()" routerLink={{testDataPath}}><mat-icon>settings</mat-icon>Settings2</a></li>
              <li><a mat-button (click)="doNavigate()" routerLink={{settingsPath}}><mat-icon>settings</mat-icon>Settings2</a></li>
              <li><a mat-button (click)="doNavigate()"><mat-icon>copyright</mat-icon></a></li>
              <li><hr /></li>

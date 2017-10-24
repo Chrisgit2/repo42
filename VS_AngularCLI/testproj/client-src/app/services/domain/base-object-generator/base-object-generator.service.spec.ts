@@ -9,7 +9,7 @@ describe('BaseObjectGeneratorService', () => {
     });
   });
 
-  it('should be created', inject([BaseObjectGeneratorService], (service: BaseObjectGeneratorService) => {
+  it('should be created', inject([BaseObjectGeneratorService], (service: BaseObjectGeneratorService<Number>) => {
     expect(service).toBeTruthy();
   }));
 });

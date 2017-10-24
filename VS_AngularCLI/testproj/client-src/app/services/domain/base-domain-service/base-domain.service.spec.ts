@@ -9,7 +9,7 @@ describe('BaseDomainService', () => {
     });
   });
 
-  it('should be created', inject([BaseDomainService], (service: BaseDomainService) => {
+  it('should be created', inject([BaseDomainService], (service: BaseDomainService<Number>) => {
     expect(service).toBeTruthy();
   }));
 });

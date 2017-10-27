@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 
 import {AppMaterialModule} from './app-material.module';
 import {AppRoutingModule} from './app-routing.module';
@@ -24,7 +25,8 @@ import { BaseDomainService } from './services/Domain/base-domain-service/base-do
   imports: [
     AppMaterialModule,
     BrowserModule,
-    AppRoutingModule    
+    AppRoutingModule,
+    HttpModule    
   ],
   providers: [SideNavProviderService, SizeProviderService, TestDataService, BaseObjectGeneratorService, BaseDomainService],
   bootstrap: [AppComponent]

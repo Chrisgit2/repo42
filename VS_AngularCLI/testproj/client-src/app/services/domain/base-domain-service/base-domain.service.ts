@@ -13,7 +13,7 @@ export class BaseDomainService<T1> {
   public ObjectGenerator: BaseObjectGeneratorService<T1>;
   public constructor(public http: Http) {
     this.versionString = 'v1';
-    this.baseString = '/api/';// + this.versionString + '/';
+    this.baseString = '/api/' + this.versionString + '/';
 
   }
   public getEntries<T>(): Promise<T[]> {

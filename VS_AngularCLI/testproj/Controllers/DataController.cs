@@ -10,7 +10,8 @@ using Newtonsoft.Json;
 namespace testproj.Controllers
 {
   [Produces("application/json")]
-  [Route("api/Data")]
+  [Route("api/v1/Data")]
+  //[Route("api/v1/[controller]")]
   public class DataController : Controller
   {
 
@@ -20,7 +21,6 @@ namespace testproj.Controllers
     {
       try
       {
-        String test = JsonConvert.SerializeObject(MockDB.TestDatas);
         return MockDB.TestDatas;
       }
       catch (Exception Ex)
@@ -30,7 +30,7 @@ namespace testproj.Controllers
     }
 
     // GET: api/Data/5
-    [HttpGet("{id}", Name = "Get")]
+    [HttpGet("{id}", Name = "GetData")]
     public TestData Get(int id)
     {
       return MockDB.TestDatas.SingleOrDefault(td => td.ID == id);

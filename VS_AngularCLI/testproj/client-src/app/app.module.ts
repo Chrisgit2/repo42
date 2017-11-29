@@ -13,7 +13,9 @@ import { SizeProviderService } from './services/size-provider.service';
 import { TestDataComponent } from './components/test-data/test-data.component';
 import { TestDataService } from './services/test-data-service/test-data.service';
 import { BaseObjectGeneratorService } from './services/domain/base-object-generator/base-object-generator.service';
-import { BaseDomainService } from './services/Domain/base-domain-service/base-domain.service';
+import { BaseDomainService } from './services/domain/base-domain-service/base-domain.service';
+import { ValueDefinitionDomainService } from './services/domain/value-definition-domain-service/value-definition-domain.service';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +30,7 @@ import { BaseDomainService } from './services/Domain/base-domain-service/base-do
     AppRoutingModule,
     HttpModule    
   ],
-  providers: [SideNavProviderService, SizeProviderService, TestDataService, BaseObjectGeneratorService, BaseDomainService],
+  providers: [SideNavProviderService, SizeProviderService, TestDataService, BaseObjectGeneratorService, BaseDomainService, ValueDefinitionDomainService, ValueDefinitionDomainService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
